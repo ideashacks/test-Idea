@@ -882,7 +882,7 @@ ul.external li a:hover {
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
-    background-color: #009EE3;
+    background-color: #fff;
 }
 
 .price-table.featured ul li:last-child a,
