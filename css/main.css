@@ -833,8 +833,8 @@ ul.external li a:hover {
 }
 
 .price-table.featured .value {
-    background-color: #009EE3;
-    color: #fff;
+    background-color: #f8f8f8;
+    color: #727272;
 }
 
 .price-table .value span {
