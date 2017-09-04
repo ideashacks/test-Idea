@@ -203,27 +203,27 @@ main > section {
 /*	Preloader
 /* ==========================================*/
 
-html,
-body {
-  background-color: white;
-	position: fixed;
+#preloader {
+    background-color: #fff;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: 9999;
 }
 
-#loader {
-  position: absolute;
-  Width: 100%;
-  Height: 100%;
-  top: 50%;
+/*Battery*/
+.loder-box {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 1px;
+  height: 100px;
   left: 50%;
-  margin-top: -2.7em;
-  margin-left: -2.7em;
-  width: 5.4em;
-  height: 5.4em;
-  background-color: white;
+  margin-left: -64px;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  width: 128px;
 }
+
 
 #hill {
   position: absolute;
