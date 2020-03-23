@@ -21,6 +21,7 @@ body {
     color: #818181;
 }
 
+
 figure, p, address {
     margin: 0;
 }
@@ -54,6 +55,10 @@ h1, h2, h3, h4, h5, h6,
 
 main > section {
     padding: 70px 0;
+}
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
 .btn {
