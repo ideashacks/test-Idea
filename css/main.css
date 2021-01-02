@@ -62,7 +62,7 @@ main > section {
 }
 
 .btn {
-    border-radius: 0;
+    border-radius: 12px;
     border: 0;
     position: relative;
     text-transform: uppercase;
