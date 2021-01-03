@@ -750,6 +750,16 @@ padding: 10px 10px;}
     text-transform: uppercase;
 }
 
+<style>
+.box-shadow{
+  	background: #ccc;
+    box-shadow: 4px 3px 8px 1px #969696;
+  	-webkit-box-shadow: 4px 3px 8px 1px #969696;
+    width: 150px;
+    height: 150px;
+}
+</style>
+
 /*=================================================================
 	Portfolio
 ==================================================================*/
