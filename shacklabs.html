@@ -81,7 +81,7 @@
 							<article id="contact">
 								
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<!--<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -100,7 +100,19 @@
 										<li><input type="submit" value="Send Mail" class="primary" /><a href="mailto:initiatives@ideashacks.com"> </a> </li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>
+								</form>-->
+								<form action="mailto:intitiatives@ideashacks.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+								
+								
 								<ul class="icons">
 									<li><a href="https://twitter.com/IdeashacksCo" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://www.facebook.com/ideashacks" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
