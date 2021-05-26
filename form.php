@@ -12,8 +12,8 @@ $comment = $_POST['message'];
 $organisation=$_POST['organisation'];
 $email=$_POST['email'];
 $servername = "localhost";
-$username = "shiviti_billling";
-$password = "xyz";
+$username = "";
+$password = "123";
 $database = "shiviti_billing";
 // Create connection
 mysql_connect($servername,$username,$password);
@@ -23,7 +23,7 @@ mysql_select_db($database) or die( "Unable to select database");
 $query= mysql_query("insert into shivit_enquiry (`name`, `email`, `phone`,`organization`, `Message`) VALUES ('".$_POST['firstname']."', '".$_POST['email']."', '".$_POST['phone']."', '".$_POST['organisation']."', '".$_POST['message']."')"); 
     // ends Data Base 
 $subject = "Enquiry-Request For Information : ".$firstname;
-$to = "info@shivit.com";
+$to = "initiatives@ideashacks.com";
 $msg ='<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -47,31 +47,32 @@ $msg ='<html xmlns="http://www.w3.org/1999/xhtml">
 <body>
 <table width="600" border="1" align="center" cellpadding="2" cellspacing="6" bordercolor="#CCCCCC" bgcolor="#FAFAFA">
   <tr>
-    <td colspan="2" style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 18px;font-weight: bold;color: #003399;">Shivit Technologies Request information Details </td>
+    <td colspan="2" style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 18px;font-weight: bold;color: #003399;">Shivit Technologies-Contact us Details </td>
   </tr>
   <tr>
     <td colspan="2"><span style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 14px;font-weight: bold;color: #330033;">Personal Details</span></td>
   </tr>
   <tr>
     <td width="274" style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #FF0000;"><span class="cont">Full Name:</span></td>
-    <td width="294" style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$_POST['firstname'].'</td>
+    <td width="294" style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$_POST['name'].'</td>
   </tr>
-  <tr>
-    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #FF0000;"><span class="cont">Phone Number:</span></td>
-    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$_POST['phone'].'</td>
-  </tr>
-   
    <tr>
     <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #FF0000;"><span class="cont">Email Address: </span></td>
-    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$email.'</td>
-  </tr>
-  
-    <tr>
-    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #FF0000;"><span class="cont">Organization Name:</span></td>
-    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$organisation.'</td>
+    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$_POST['email'].'</td>
   </tr>
   <tr>
-   <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #FF0000;"><span class="cont">Comments:</span></td>
+    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #FF0000;"><span class="cont">Phone No: </span></td>
+    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$_POST['phone'].'</td>
+  </tr>
+  <tr>
+    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #FF0000;"><span class="cont">Company:</span></td>
+    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$_POST['company'].'</td>
+  </tr>
+   
+  
+  
+    <tr>
+    <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #FF0000;"><span class="cont">Description: </span></td>
     <td style="font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #336699;">'.$_POST['message'].'</td>
   </tr>
  
@@ -108,12 +109,10 @@ $msg1 ='<!DOCTYPE html>
 			</div>
 	<div  style="padding: 10px; background-color: #FFF; padding-bottom: 30px;" >	
 <p><hr />
-Dear '.$_POST['firstname'].',
+Dear '.$_POST['name'].',
 </p>
 <p style="margin:10px 0 0 0">
-Thank you for contacting Shivit. We appreciate your recent enquiry for the Shivit software services.We will respond to your Enquiry soon.
-We value your trust in our company, and we will do our best to meet your service expectations. 
-Our experts will help you to increase the productivity of your staff and business.
+Thank you for contacting Ideashacks.
 </p>
 
 <p style="margin:10px 0 0 0">
@@ -159,8 +158,7 @@ else{
              window.history.go(-1);
      </script>";
   }
-//header("Location:index.html");
 
 } ?>
-form.php
-Displaying form.php.
+contact3.php
+Displaying contact3.php.
