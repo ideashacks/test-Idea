@@ -21,7 +21,7 @@ $validator->field('comments')->maxLength(6000);
 
 
 
-$pp->sendEmailTo('someone@gmail.com'); // ← Your email here
+$pp->sendEmailTo('initiatives@ideashacks.com'); // ← Your email here
 
 echo $pp->process($_POST);
 <script>
@@ -79,7 +79,7 @@ $(function()
 
                     $.ajax({
                 type: "POST",
-                url: 'handler.php',
+                url: 'form.php',
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json'
